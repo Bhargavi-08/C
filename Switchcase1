@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    char op;
+    printf("enter a,b and op values");
+    scanf("%d%d %c",&a,&b,&op);
+    switch(op)
+    {
+        case '+':printf("the addition is %d:",a+b);
+        break;
+        case '-':printf("the subtraction is %d:",a-b);
+        break;
+        case '*':printf("the product is %d:",a*b);
+        break;
+        case '/':printf("the division is %d:",a/b);
+        break;
+        case '%':printf("the remainder is %d:",a%b);
+       default:printf("invalid operator ");
+    }
+}
