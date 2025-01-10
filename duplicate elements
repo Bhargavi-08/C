@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main()
+{
+    int a[10],n,i,j,count=0,d[10];
+    float avg;
+    printf("enter array size:");
+    scanf("%d",&n);
+    printf("enter the array elements:");
+    for(i=0;i<n;++i)
+    {
+        scanf("%d",&a[i]);
+        
+    }
+    for(i=0;i<n;++i)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                
+                d[i]=a[i];
+                 count++;
+            }
+        }
+    }
+    printf("the no.of duplicate values are %d\n",count);
+     printf("the duplicate values are:");
+    for(i=0;i<count;++i)
+    {
+        printf("%d\t",d[i]);
+    }
+   
+}
